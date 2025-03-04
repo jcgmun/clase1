@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a clone of the juanmunguia site">
+        <title>Juan Munguia | clone of juanmunguia.com</title>
+        <link rel="stylesheet" type="text/css" href="./styles/global.css" />
+        <link rel="stylesheet" type="text/css" href="./styles/header.css" />
+        <link rel="stylesheet" type="text/css" href="./styles/hero-section.css" />
+    </head>
+    <body>
+        <header class="header content-wrapper">
+              <img src="./logo-nombre.png" alt="Logo Juan Munguia" width="198">
+              <button type="button" class="menu-button menu__open-button">
+                <svg width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="menuTitle" xmlns="http://www.w3.org/2000/svg">
+                  <title id="menuTitle">Menu</title>
+                  <rect x="2" y="3" width="12" height="2" fill="orange"/>
+                  <rect x="2" y="7" width="12" height="2" fill="orange"/>
+                  <rect x="2" y="11" width="12" height="2" fill="orange"/>
+                </svg>
+              </button>
+              <ul class="menu menu--open">
+                <li class="menu-item__close-button-container">
+                  <button type= "button" class="menu-button menu__close-button">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <line x1="1" y1="1" x2="15" y2="15" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+                      <line x1="15" y1="1" x2="1" y2="15" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+                    </svg>
+                  </button>
+                </li>
+                <li class="menu-item">Bio</li>
+                <li class="menu-item" >Mi música</li>
+                <li class="menu-item">Galería</li>
+                <li class="menu-item">Eventos</li>
+                <li class="menu-item">Contacto</li>
+              </ul>
+              <div class="menu--open menu__overlay"></div>       
+        </header>
+            <div class="hero-section">
+                <div class="content-wrapper">
+                  <img src="./logo.svg" alt="Logo Juan Munguia" width="300">
+                </div>
+            </div>
+            <script src="./scripts/header.js"></script>
+    </body>
+</html>

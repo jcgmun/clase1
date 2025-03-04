@@ -1,0 +1,22 @@
+# EditorConfig is awesome: https://EditorConfig.org
+# Top-most EditorConfig file
+root = true
+
+# Unix-style line endings
+[*]
+end_of_line = lf
+charset = utf-8
+indent_style = space
+indent_size = 2
+
+# Windows-style line endings
+[*.{txt,md,html,css,js}]
+end_of_line = crlf
+
+# Exclude certain files
+[Makefile]
+indent_style = tab
+
+# Exclude certain directories
+[dist/**]
+indent_style = tab
