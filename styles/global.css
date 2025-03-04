@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    color:#898f97;
+}
+.content-wrapper{
+    width: 100%;
+    max-width: 1080px;
+}
