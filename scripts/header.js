@@ -39,7 +39,7 @@ function debounce(func, delay) {
 }
 
 const handleHeaderResize = debounce(() => {
-  if (window.innerWidth > 900) {
+  if (window.innerWidth > 900 && isMenuOpen()) {
     closeMenu();
   }
 }, 200); // Runs at most once every 200ms
