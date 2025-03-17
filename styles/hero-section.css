@@ -11,6 +11,6 @@
 
 @media (min-width: 900px){
   .hero-section {
-    transform: translateY(-68px);
+    margin-block-start: -68px;
   }
 }
