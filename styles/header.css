@@ -1,4 +1,6 @@
 .header {
+    position: relative;
+    z-index: 10;
     background-color: #101417;
     display: flex;
     justify-content: space-between;
@@ -6,6 +8,13 @@
     margin: 0 auto;
     padding: 1rem;
 }
+@media (min-width: 900px){
+    .header {
+        position: sticky;
+        top: 60px;
+    }
+}
+
 .menu {
     position: absolute;
     top:0;
@@ -55,6 +64,9 @@
     border: none;
 }
 @media (min-width: 900px){
+    .menu-item__close-button-container {
+        display:none;
+    }
     .menu-button {
         display: none;
     }
@@ -68,7 +80,14 @@
 .menu-item:last-child {
     border-bottom: 1px solid rgba(255, 255, 255,.03);     
 }
-
+@media (min-width: 900px){
+    .menu-item{
+        border-top: none;
+    }
+    .menu-item:last-child{
+        border-bottom: none;        
+    }
+}
 .menu__overlay{
     position:fixed;
     top:0;
