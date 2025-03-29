@@ -1,61 +1,62 @@
 .header {
-    position: relative;
-    z-index: 10;
-    background-color: #101417;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    padding: 1rem;
+  position: relative;
+  z-index: 10;
+  background-color: #101417;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem;
 }
-@media (min-width: 900px){
-    .header {
-        position: sticky;
-        top: 60px;
-    }
+
+@media (min-width: 900px) {
+  .header {
+    position: sticky;
+    top: 60px;
+  }
 }
 
 .menu {
-    position: absolute;
-    top:0;
-    right:0;
-    height: 100vh;
-    width: 250px;
-    z-index: 100;
-    
-    margin:0;
-    padding-inline-start: 0;
+  position: absolute;
+  top:0;
+  right:0;
+  height: 100vh;
+  width: 250px;
+  z-index: 100;
+  
+  margin:0;
+  padding-inline-start: 0;
 
-    transform: translateX(100%);
+  transform: translateX(100%);
 
-    list-style-type: none;
-    background-color: #101417;
-    transition: transform 0.3s ease-in-out;
+  list-style-type: none;
+  background-color: #101417;
+  transition: transform 0.3s ease-in-out;
 }
 
 .menu.menu--open {
-    transform: translateX(0);
+  transform: translateX(0);
 }
 
-@media (min-width: 900px){
-    .menu {
-        position: relative;
-        height: auto;
-        width: auto;
-        display: flex;
-        gap: 20px;
-        transform: translateX(0);
-    }
+@media (min-width: 900px) {
+  .menu {
+    position: relative;
+    height: auto;
+    width: auto;
+    display: flex;
+    gap: 20px;
+    transform: translateX(0);
+  }
 }
 @media (min-width: 1000px){
-    .menu {
-        gap: 40px;
-    }
+  .menu {
+    gap: 40px;
+  }
 }
 .menu-item__close-button-container{
-    display:flex;
-    justify-content: flex-end;
-    padding: 16px 20px;
+  display:flex;
+  justify-content: flex-end;
+  padding: 16px 20px;
 }
 
 .menu-button {
@@ -63,14 +64,16 @@
     color: inherit;
     border: none;
 }
+
 @media (min-width: 900px){
-    .menu-item__close-button-container {
-        display:none;
-    }
-    .menu-button {
-        display: none;
-    }
+  .menu-item__close-button-container {
+    display: none;
+  }
+  .menu-button {
+    display: none;
+  }
 }
+
 .menu-item{
     padding:8px 20px;
 
