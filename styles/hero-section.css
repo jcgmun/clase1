@@ -5,7 +5,7 @@
     
     height: calc(100vh + 100px);
 
-    background: url(../fondo.jpeg) no-repeat center center fixed;
+    background: url(../images/fondo.jpeg) no-repeat center center fixed;
     background-size: cover;
 }
 
