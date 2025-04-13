@@ -1,0 +1,7 @@
+.about-me-heading{
+  text-wrap: balance;
+  text-align: center;
+}
+.about-me-heading > strong {
+  color:chocolate;
+}
