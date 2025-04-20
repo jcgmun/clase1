@@ -1,7 +1,31 @@
+.about-me-section{
+  background-image: url(../images/about-me-pattern.png);
+  background-repeat: repeat;
+}
 .about-me-heading{
   text-wrap: balance;
-  text-align: center;
+  text-align: left;
+  padding:16px;
+}
+@media (min-width: 900px) {
+  .about-me-heading{
+    text-align: center;
+  }
 }
 .about-me-heading > strong {
   color:chocolate;
+}
+.about-me-content{
+  display:flex;
+  color: #626262;;
+  flex-direction:column;
+  padding:16px;
+}
+@media (min-width: 900px) {
+  .about-me-content{
+    flex-direction: row;
+  }
+}
+.about-me-subheading{
+  color: #172025;
 }

@@ -3,7 +3,7 @@
 }
 body {
     margin: 0;
-    color:#898f97;
+    color:#172025;
     font-family: 'Roboto', sans-serif;
 }
 .content-wrapper{
@@ -14,6 +14,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
   font-weight: normal;
+  margin-block-start: 0;
 }
 h1 {
   font-size: 2.5rem;
