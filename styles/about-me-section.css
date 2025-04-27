@@ -37,4 +37,7 @@
 }
 .about-me-subheading{
   color: #172025;
+  width: fit-content;
+  border-block-end: 2px chocolate solid;
+  padding-block-end: 4px;
 }
