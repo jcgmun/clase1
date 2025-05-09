@@ -41,3 +41,30 @@
   border-block-end: 2px chocolate solid;
   padding-block-end: 4px;
 }
+.event-container{
+  display: flex;
+  max-width: 100%;
+  gap: 16px;
+}
+.event-image{
+  width: 100%;
+  max-width: 140px;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  object-fit: cover;
+  border-inline-end: 2px solid chocolate;
+}
+.event-details{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  font-family: "Playfair Display" , serif;
+}
+.event-info{
+  font-size: 16px;
+  color: #172025;
+  margin-block-end: 8px;
+  border-block-end: 1px solid #62626260;
+  padding-block-start: 16px;
+  padding-block-end: 8px;
+}
