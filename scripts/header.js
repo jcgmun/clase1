@@ -39,7 +39,7 @@ function debounce(func, delay) {
 }
 
 const handleHeaderResize = debounce(() => {
-  if (window.innerWidth > 900 && isMenuOpen()) {
+  if (window.innerWidth > 900) {
     closeMenu();
   }
 }, 200); // Runs at most once every 200ms
@@ -51,11 +51,13 @@ function init(){
   });
   const menuOverlay = document.querySelector(".menu__overlay");
   menuOverlay.addEventListener("click",closeMenu)
-  document.addEventListener("keydown",(ev)=>{
-    if (isKeyEscape(ev.code) && isMenuOpen()){
-      closeMenu()
+  document.addEventListener("keydown", (ev) => {
+    if (isKeyEscape(ev.code) && isMenuOpen()) {
+      closeMenu();
     }
   })
   window.addEventListener("resize", handleHeaderResize);
+  closeMenu();
 }
-init()
+
+init();
