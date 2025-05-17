@@ -13,9 +13,9 @@
 }
 
 .about-me-heading {
-padding: 16px;
-text-align: left;
-text-wrap: balance;
+  padding: 16px;
+  text-align: left;
+  text-wrap: balance;
 }
 
 @media (width >= 900px) {
