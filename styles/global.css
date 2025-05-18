@@ -1,21 +1,35 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
+
+html,
 body {
-    margin: 0;
-    color:#172025;
-    font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
-.content-wrapper{
-    width: 100%;
-    max-width: 1080px;
-    margin: 0 auto;
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  color: #172025;
 }
-h1, h2, h3, h4, h5, h6 {
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-block-start: 0;
   font-family: 'Playfair Display', serif;
   font-weight: normal;
-  margin-block-start: 0;
 }
+
 h1 {
   font-size: 2.5rem;
 }

@@ -1,16 +1,14 @@
 .hero-section {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    
-    height: calc(100vh + 100px);
-
-    background: url(../images/fondo.jpeg) no-repeat center center fixed;
-    background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh + 100px);
+  background: url('../images/fondo.jpeg') no-repeat center center fixed;
+  background-size: cover;
 }
 
-@media (min-width: 900px){
-    .hero-section {
-        margin-block-start: -68px;
-    }
+@media (width >= 900px) {
+  .hero-section {
+    margin-block-start: -68px;
+  }
 }
