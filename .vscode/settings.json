@@ -7,5 +7,5 @@
     "source.fixAll"
   ],
   "eslint.validate": ["javascript", "html"],
-  "stylelint.validate": ["css", "postcss", "html"]
+  "stylelint.validate": ["css", "postcss"]
 }
