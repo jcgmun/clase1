@@ -48,7 +48,14 @@
   border-block-end: 2px chocolate solid;
 }
 
-.event-container {
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-inline-start: 0;
+}
+
+.event-list-item {
   display: flex;
   gap: 16px;
   max-width: 100%;
