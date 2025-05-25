@@ -29,15 +29,15 @@
 }
 
 .about-me-content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  gap: 16px;
   padding: 16px;
   color: #626262;
 }
 
 @media (width >= 900px) {
   .about-me-content {
-    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
