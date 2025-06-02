@@ -16,11 +16,14 @@
   padding: 16px;
   text-align: left;
   text-wrap: balance;
+  max-width: 600px;
+  justify-self: center;
 }
 
 @media (width >= 900px) {
   .about-me-heading {
     text-align: center;
+    font-size: 48px;
   }
 }
 
@@ -46,6 +49,7 @@
   padding-block-end: 4px;
   color: #172025;
   border-block-end: 2px chocolate solid;
+  font-size: 32px;
 }
 
 .event-list {
@@ -81,4 +85,8 @@
   font-size: 16px;
   color: #172025;
   border-block-end: 1px solid #62626260;
+}
+
+.about-me-image{
+  max-width: 100%;
 }
