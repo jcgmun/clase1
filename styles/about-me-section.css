@@ -13,17 +13,17 @@
 }
 
 .about-me-heading {
+  justify-self: center;
+  max-width: 600px;
   padding: 16px;
   text-align: left;
   text-wrap: balance;
-  max-width: 600px;
-  justify-self: center;
 }
 
 @media (width >= 900px) {
   .about-me-heading {
-    text-align: center;
     font-size: 48px;
+    text-align: center;
   }
 }
 
@@ -47,9 +47,9 @@
 .about-me-subheading {
   width: fit-content;
   padding-block-end: 4px;
+  font-size: 32px;
   color: #172025;
   border-block-end: 2px chocolate solid;
-  font-size: 32px;
 }
 
 .event-list {
@@ -87,6 +87,6 @@
   border-block-end: 1px solid #62626260;
 }
 
-.about-me-image{
+.about-me-image {
   max-width: 100%;
 }

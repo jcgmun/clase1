@@ -1,0 +1,11 @@
+.footer {
+  display: block;
+  justify-content: center;
+  justify-items: center;
+  font-size: 12px;
+  background-color: rgb(183 183 183);
+}
+
+.social-media {
+  display: flex;
+}
