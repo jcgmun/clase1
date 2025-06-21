@@ -6,14 +6,24 @@
   margin: 0;
   font-size: 12px;
   background: #a3a2a2;
-  background: linear-gradient(181deg, rgb(163 162 162) 0%, rgb(212 212 212) 27%);
+  background: linear-gradient(
+    181deg,
+    rgb(163 162 162) 0%,
+    rgb(212 212 212) 27%
+  );
 }
 
-.social-media { 
+.social-media {
   display: flex;
+  gap: 12px;
+  padding: 0;
   list-style-type: none;
 }
 
-.social-media path{
-  fill:chocolate;
+.social-media path {
+  fill: rgb(90 87 85);
+}
+
+.social-media svg {
+  width: 32px;
 }
