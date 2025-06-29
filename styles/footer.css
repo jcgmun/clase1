@@ -1,7 +1,7 @@
 .footer {
-  display: block;
-  justify-content: center;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 2.5rem 1rem;
   margin: 0;
   font-size: 12px;

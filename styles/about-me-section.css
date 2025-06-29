@@ -20,6 +20,13 @@
   text-wrap: balance;
 }
 
+@media (width >= 640px) {
+  .about-me-heading {
+    margin: 0 auto 32px;
+    text-align: center;
+  }
+}
+
 @media (width >= 900px) {
   .about-me-heading {
     font-size: 48px;
