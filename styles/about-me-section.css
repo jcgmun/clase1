@@ -3,6 +3,12 @@
   background-repeat: repeat;
 }
 
+@media (width >= 900px) {
+  .about-me-section {
+    padding-block-end: 120px;
+  }
+}
+
 .about-me-section::before {
   display: block;
   width: 100%;
@@ -40,15 +46,28 @@
 
 .about-me-content {
   display: grid;
+  grid-template-areas:
+    'bio'
+    'events';
   gap: 16px;
   padding: 16px;
+  margin-block-end: 24px;
   color: #626262;
 }
 
 @media (width >= 900px) {
   .about-me-content {
+    grid-template-areas: 'bio events events';
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.about-me-bio {
+  grid-area: bio;
+}
+
+.events-content {
+  grid-area: events;
 }
 
 .about-me-subheading {
@@ -95,5 +114,6 @@
 }
 
 .about-me-image {
+  display: block;
   max-width: 100%;
 }
