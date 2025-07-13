@@ -96,6 +96,15 @@
   }
 }
 
+.menu-item a {
+  color: #898f97;
+  text-decoration: none;
+}
+
+.menu-item a:hover {
+  color: chocolate;
+}
+
 .menu__overlay {
   position: fixed;
   top: 0;
