@@ -9,7 +9,7 @@
 
 @media (width >= 900px) {
   .hero-section {
-    height: 100vh;
+    height: 100dvh;
     margin-block-start: -68px;
   }
 }
