@@ -27,7 +27,7 @@
 
 .events-page__events {
   flex: 1;
-  padding-block: 40px;
+  padding-block: 120px;
   background-image: url('../images/about-me-pattern.png');
   background-repeat: repeat;
 }
@@ -41,8 +41,28 @@
   list-style-type: none;
 }
 
-.event-details {
+.events-page__list-item {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
   background-color: #fff;
+}
+
+.events-page__event-details {
+  padding: 16px 0 0;
+}
+
+.events-page__event-info {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+}
+
+.events-page__event-location {
+  color: #626262;
+}
+
+.events-page__event-time {
+  color: #626262;
 }
 
 .events-page__event-image {
