@@ -1,10 +1,20 @@
 .hero-section {
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  align-items: flex-start;
   height: 450px;
   background: url('../images/fondo.jpeg') no-repeat center center;
   background-size: cover;
+}
+
+.hero-section__logo-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-block-start: 82px;
+}
+
+.hero-section__logo {
+  width: 50%;
+  max-width: 440px;
 }
 
 @media (width >= 900px) {
@@ -12,9 +22,12 @@
     height: 100dvh;
     margin-block-start: -68px;
   }
-}
 
-.hero-section__logo {
-  width: 40%;
-  max-width: 440px;
+  .hero-section__logo-container {
+    padding-block-start: 228px;
+  }
+
+  .hero-section__logo {
+    width: 25%;
+  }
 }
