@@ -44,12 +44,11 @@
 .events-page__list-item {
   display: flex;
   flex-direction: column;
-  padding: 24px;
   background-color: #fff;
 }
 
 .events-page__event-details {
-  padding: 16px 0 0;
+  padding: 24px;
 }
 
 .events-page__event-info {
