@@ -36,3 +36,30 @@ h6 {
 h1 {
   font-size: 2.5rem;
 }
+
+.single-page__hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+  color: #fff;
+  background-image: url('../images/bg-hero-section.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.single-page__hero-section h1 {
+  text-align: center;
+}
+
+@media (width >= 900px) {
+  .single-page__hero-section {
+    margin-block-start: -68px;
+  }
+
+  .single-page__hero-section h1 {
+    padding-block-start: 80px;
+    margin-block-end: 0;
+    font-size: 75px;
+  }
+}
