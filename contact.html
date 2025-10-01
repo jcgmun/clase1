@@ -85,6 +85,41 @@
           <h1>Contact</h1>
         </div>
       </div>
+      <div class="contact-page__form">
+        <h2>Get in touch!</h2>
+        <form action="#" method="post" id="contact-form">
+          <label for="contact-form__name">Name</label>
+          <input
+            type="text"
+            id="contact-form__name"
+            name="name"
+            placeholder="John Coltrane"
+          />
+          <label for="contact-form__email">Email</label>
+          <input
+            type="email"
+            id="contact-form__email"
+            name="email"
+            placeholder="johncoltrane@gmail.com"
+          />
+          <label for="contact-form__subject">Subject</label>
+          <input
+            type="text"
+            id="contact-form__subject"
+            name="subject"
+            placeholder="I want to hire you!"
+          />
+          <label for="contact-form__message">Message</label>
+          <textarea
+            id="contact-form__message"
+            name="message"
+            placeholder=""
+            rows="3"
+            cols="10"
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
     </main>
     <footer class="footer">
       <img
@@ -151,6 +186,7 @@
       </div>
     </footer>
     <script src="./scripts/header.js"></script>
+    <script src="./scripts/contact.js"></script>
     <script src="./scripts/footer.js"></script>
   </body>
 </html>
