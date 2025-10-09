@@ -63,3 +63,18 @@ h1 {
     font-size: 75px;
   }
 }
+
+.page__subheading {
+  width: fit-content;
+  padding-block-end: 4px;
+  font-size: 32px;
+  color: #172025;
+  border-block-end: 2px chocolate solid;
+}
+
+.page__main-content {
+  flex: 1;
+  padding-block: 120px;
+  background-image: url('../images/about-me-pattern.png');
+  background-repeat: repeat;
+}
