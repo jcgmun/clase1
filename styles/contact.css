@@ -1,0 +1,42 @@
+.contact-form__subheading {
+  margin: 0 auto 32px;
+  font-size: 46px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form__row-container {
+  display: flex;
+  gap: 16px;
+}
+
+.contact-form__field {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-form__label {
+}
+
+.contact-form__input {
+  padding: 8px 16px;
+  line-height: 2;
+  background-color: transparent;
+  border: 1px solid #172025;
+  transition: border-color 0.5s ease-in-out;
+}
+
+.contact-form__input:focus {
+  outline: none;
+  border-color: chocolate;
+}
+
+.contact-form__textarea {
+  resize: none;
+}

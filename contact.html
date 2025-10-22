@@ -87,29 +87,42 @@
       </div>
       <div class="page__main-content">
         <div class="content-wrapper">
-          <h2 class="page__subheading">Get in touch!</h2>
-          <form action="#" method="post" id="contact-form">
-            <div class="contact-form__field">
-              <label for="contact-form__name">Name</label>
-              <input
-                type="text"
-                id="contact-form__name"
-                name="name"
-                placeholder="John Coltrane"
-              />
+          <h2 class="page__subheading contact-form__subheading">
+            Get in touch!
+          </h2>
+          <form class="contact-form" action="#" method="post" id="contact-form">
+            <div class="contact-form__row-container">
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="contact-form__name"
+                  >Name</label
+                >
+                <input
+                  class="contact-form__input"
+                  type="text"
+                  id="contact-form__name"
+                  name="name"
+                  placeholder="John Coltrane"
+                />
+              </div>
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="contact-form__email"
+                  >Email</label
+                >
+                <input
+                  class="contact-form__input"
+                  type="email"
+                  id="contact-form__email"
+                  name="email"
+                  placeholder="johncoltrane@gmail.com"
+                />
+              </div>
             </div>
             <div class="contact-form__field">
-              <label for="contact-form__email">Email</label>
+              <label class="contact-form__label" for="contact-form__subject"
+                >Subject</label
+              >
               <input
-                type="email"
-                id="contact-form__email"
-                name="email"
-                placeholder="johncoltrane@gmail.com"
-              />
-            </div>
-            <div class="contact-form__field">
-              <label for="contact-form__subject">Subject</label>
-              <input
+                class="contact-form__input"
                 type="text"
                 id="contact-form__subject"
                 name="subject"
@@ -117,12 +130,15 @@
               />
             </div>
             <div class="contact-form__field">
-              <label for="contact-form__message">Message</label>
+              <label class="contact-form__label" for="contact-form__message"
+                >Message</label
+              >
               <textarea
+                class="contact-form__input contact-form__textarea"
                 id="contact-form__message"
                 name="message"
                 placeholder=""
-                rows="3"
+                rows="5"
                 cols="10"
               ></textarea>
             </div>

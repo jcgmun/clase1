@@ -64,6 +64,32 @@ h1 {
   }
 }
 
+.page__heading {
+  justify-self: center;
+  max-width: 600px;
+  padding: 16px;
+  text-align: left;
+  text-wrap: balance;
+}
+
+@media (width >= 640px) {
+  .page__heading {
+    margin: 0 auto 32px;
+    text-align: center;
+  }
+}
+
+@media (width >= 900px) {
+  .page__heading {
+    font-size: 48px;
+    text-align: center;
+  }
+}
+
+.page__heading > strong {
+  color: chocolate;
+}
+
 .page__subheading {
   width: fit-content;
   padding-block-end: 4px;
