@@ -1,8 +1,8 @@
 .events-page__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(336px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
   gap: 16px;
-  padding-inline-start: 0;
+  padding-inline: 16px;
   margin: 0;
   list-style-type: none;
 }

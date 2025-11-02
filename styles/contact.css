@@ -7,11 +7,20 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  padding-inline: 16px;
 }
 
 .contact-form__row-container {
   display: flex;
-  gap: 16px;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (width >= 768px) {
+  .contact-form__row-container {
+    flex-direction: row;
+    gap: 16px;
+  }
 }
 
 .contact-form__field {
@@ -22,6 +31,7 @@
 }
 
 .contact-form__label {
+  font-size: 13px;
 }
 
 .contact-form__input {
@@ -39,4 +49,21 @@
 
 .contact-form__textarea {
   resize: none;
+}
+
+.contact-form__button {
+  padding-block: 12px;
+  color: chocolate;
+  background-color: transparent;
+  border: 2px solid chocolate;
+  transition:
+    color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+}
+
+.contact-form__button:hover,
+.contact-form__button:focus {
+  color: #fff;
+  outline: none;
+  background-color: chocolate;
 }
