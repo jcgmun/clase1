@@ -86,11 +86,17 @@
         </div>
       </div>
       <div class="page__main-content">
-        <div class="content-wrapper">
+        <div class="content-wrapper contact-form__wrapper">
           <h2 class="page__subheading contact-form__subheading">
             Get in touch!
           </h2>
-          <form class="contact-form" action="#" method="post" id="contact-form">
+          <form
+            class="contact-form"
+            action="#"
+            method="post"
+            id="contact-form"
+            novalidate
+          >
             <div class="contact-form__row-container">
               <div class="contact-form__field">
                 <label class="contact-form__label" for="contact-form__name"
@@ -102,6 +108,8 @@
                   id="contact-form__name"
                   name="name"
                   placeholder="John Coltrane"
+                  required
+                  maxlength="10"
                 />
               </div>
               <div class="contact-form__field">
@@ -114,6 +122,7 @@
                   id="contact-form__email"
                   name="email"
                   placeholder="johncoltrane@gmail.com"
+                  required
                 />
               </div>
             </div>
@@ -127,6 +136,7 @@
                 id="contact-form__subject"
                 name="subject"
                 placeholder="I want to hire you!"
+                required
               />
             </div>
             <div class="contact-form__field">
@@ -138,6 +148,7 @@
                 id="contact-form__message"
                 name="message"
                 placeholder=""
+                required
                 rows="5"
                 cols="10"
               ></textarea>

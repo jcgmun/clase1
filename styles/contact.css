@@ -3,6 +3,10 @@
   font-size: 46px;
 }
 
+.contact-form__wrapper {
+  max-width: 720px;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
