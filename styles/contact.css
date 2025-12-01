@@ -46,6 +46,10 @@
   transition: border-color 0.5s ease-in-out;
 }
 
+.contact-form__input--has-error {
+  border-color: #d32f2f;
+}
+
 .contact-form__input:focus {
   outline: none;
   border-color: chocolate;
@@ -70,4 +74,11 @@
   color: #fff;
   outline: none;
   background-color: chocolate;
+}
+
+.contact-form__error {
+  min-height: 15px;
+  margin-block: 0;
+  font-size: 13px;
+  color: #d32f2f;
 }
