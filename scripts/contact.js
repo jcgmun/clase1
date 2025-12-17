@@ -29,16 +29,20 @@ function init() {
   };
   contactForm.addEventListener('submit', (submitEvent) => {
     submitEvent.preventDefault();
-    console.log(submitEvent);
-    console.log(fields);
-    const nameValidity = fields.name.element.validity;
-    const emailValidity = fields.email.element.validity;
-    const subjectValidity = fields.subject.element.validity;
-    const messageValidity = fields.message.element.validity;
-    console.log(nameValidity);
-    console.log(emailValidity);
-    console.log(subjectValidity);
-    console.log(messageValidity);
+    Object.entries(fields).forEach(([fieldName, { element, validations }]) => {
+      Object.entries(validations).forEach(([validationType, message]) => {
+        const fieldError = element.nextElementSibling;
+        if (element.validity[validationType]) {
+          fieldError.textContent = message;
+        } else {
+          fieldError.textContent = '';
+        }
+      });
+      // const isValid = element.checkValidity();
+      // console.log(
+      //   ⁠ 2: Field "${fieldName}" is valid: ${isValid}, reportValidity called: ${report} ⁠,
+      // );
+    });
   });
 }
 init();
