@@ -32,15 +32,18 @@ function init() {
     Object.entries(fields).forEach(([fieldName, { element, validations }]) => {
       Object.entries(validations).forEach(([validationType, message]) => {
         const fieldError = element.nextElementSibling;
+        console.log(fieldError.innerHTML);
         if (element.validity[validationType]) {
           fieldError.textContent = message;
         } else {
-          fieldError.textContent = '';
+          if (fieldError.innerHTML && fieldError.innerHTML === message) {
+            fieldError.textContent = '';
+          }
         }
       });
       // const isValid = element.checkValidity();
       // console.log(
-      //   ⁠ 2: Field "${fieldName}" is valid: ${isValid}, reportValidity called: ${report} ⁠,
+      //   ⁠2: Field "${fieldName}" is valid: ${isValid}, reportValidity called: ${report} ⁠,
       // );
     });
   });
