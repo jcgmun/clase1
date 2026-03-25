@@ -25,10 +25,17 @@
   list-style-type: none;
 }
 
-.social-media path {
-  fill: rgb(90 87 85);
+.social-media a {
+  color: rgb(90 87 85);
+  transition: color 0.2s;
+}
+
+.social-media a:hover {
+  color: chocolate;
 }
 
 .social-media svg {
-  width: 32px;
+  display: block;
+  width: 20px;
+  height: 20px;
 }

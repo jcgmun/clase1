@@ -120,6 +120,36 @@
   display: block;
 }
 
+.header-social {
+  display: none;
+  gap: 12px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media (width >= 900px) {
+  .header-social {
+    display: flex;
+  }
+}
+
+.header-social a {
+  color: #898f97;
+  transition: color 0.2s;
+}
+
+.header-social a:hover {
+  color: chocolate;
+}
+
+.header-social svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
 @media (width >= 900px) {
   .menu__overlay.menu--open {
     display: none;
